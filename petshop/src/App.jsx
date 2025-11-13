@@ -20,6 +20,7 @@ function App() {
         {/* Use element={<Componente />} para renderizar */}
         <Route path='/admin' element={<Admin />} />
         <Route path="/admin/NovaCategoria" element={<FormCategoria />} />
+        <Route path="/admin/:id" element={<FormCategoria />} /> 
         <Route path='/' element={<Home />} />
         <Route path='/sobre' element={<Sobre />} />
         <Route path='/posts/:id' element={<Post />} />

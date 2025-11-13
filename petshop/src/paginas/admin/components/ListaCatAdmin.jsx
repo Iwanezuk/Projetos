@@ -52,7 +52,7 @@ const ListaCatAdmin = () => {
 								<td colSpan="2" className="tabela__coluna--p tabela__alinhamento--direita">
 									{/* Botão EDITAR */}
 									<Link
-										to={`/admin`}
+										to={`/admin/${categoria.id}`}
 										style={{ textDecoration: 'none' }}
 									>
 										<Button
