@@ -28,7 +28,7 @@ const ListaCatAdmin = () => {
 				<thead>
 					<tr>
 						<th className="tabela__coluna--g">Categoria</th>
-						<th colSpan="3" className="tabela__coluna--p tabela__alinhamento--direita">
+						<th colSpan="4" className="tabela__coluna--p tabela__alinhamento--direita">
 							<Link to="/admin/NovaCategoria">
 								<Button
 									variant="contained"
@@ -52,7 +52,7 @@ const ListaCatAdmin = () => {
 								<td colSpan="2" className="tabela__coluna--p tabela__alinhamento--direita">
 									{/* Botão EDITAR */}
 									<Link
-										to={`/admin/${categoria.id}`}
+										to={`/admin/categoria/${categoria.id}`}
 										style={{ textDecoration: 'none' }}
 									>
 										<Button
@@ -64,10 +64,10 @@ const ListaCatAdmin = () => {
 											Editar
 										</Button>
 									</Link>
-
+</td><td>
 									{/* Botão EXCLUIR */}
 									<Link
-										to={`/admin`}
+										to={`/admin/categoria/sub/${categoria.id}`}
 										style={{ textDecoration: 'none' }}
 									>
 										<Button
@@ -86,7 +86,7 @@ const ListaCatAdmin = () => {
 								<td>
 									{/* Botão SUBCATEGORIA */}
 									<Link
-										to={`/admin/categoria/${categoria.id}`}
+										to={`/admin/categoria/sub/${categoria.id}`}
 										style={{ textDecoration: 'none' }}
 									>
 										<Button

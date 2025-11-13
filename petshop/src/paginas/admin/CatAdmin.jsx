@@ -18,9 +18,6 @@ const CatAdmin = () => {
 
   return (
     <>
-      <div className="container">
-        <h2 className="titulo-pagina">Administração</h2>
-      </div>
       <div className='container'>
         <table className="tabela">
           <thead>
@@ -39,7 +36,7 @@ const CatAdmin = () => {
               ))
             }
               <td>
-                <Link to={`/admin/sub/${id}`}>
+                <Link to={`/admin/categoria/sub/form/${id}`}>
                   <Button
                     type="button"
                     variant="contained"
